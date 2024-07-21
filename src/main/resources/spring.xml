@@ -5,6 +5,9 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="dev" class="org.example.Dev">
-
     </bean>
+
+    <bean id="laptop" class="org.example.Laptop">
+    </bean>
+
 </beans>
