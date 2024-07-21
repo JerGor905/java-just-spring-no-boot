@@ -5,7 +5,12 @@ public class Dev {
     private int age;
 
     public Dev() {
-        System.out.println("Dev Constructor");
+        System.out.println("Dev Default Constructor");
+    }
+
+    public Dev(int age) {
+        this.age = age;
+        System.out.println("Dev Parameterized Constructor");
     }
 
     public int getAge() {

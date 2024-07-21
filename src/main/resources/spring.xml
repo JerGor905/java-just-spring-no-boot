@@ -5,7 +5,10 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="dev" class="org.example.Dev">
-        <property name="age" value="12"/>
+<!--        Setter Injection:-->
+<!--        <property name="age" value="12"/>-->
+<!--        Constructor Injection-->
+        <constructor-arg value="14"/>
     </bean>
 
     <bean id="laptop" class="org.example.Laptop">
