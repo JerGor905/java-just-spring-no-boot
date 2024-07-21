@@ -5,10 +5,17 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="dev" class="org.example.Dev">
+<!--        # laptop-->
+<!--        Setter Injection:-->
+<!--        <property name="laptop" ref="laptop"/>-->
+<!--        Constructor Injection:-->
+        <constructor-arg ref="laptop"/>
+
+<!--        # age-->
 <!--        Setter Injection:-->
 <!--        <property name="age" value="12"/>-->
 <!--        Constructor Injection-->
-        <constructor-arg value="14"/>
+<!--        <constructor-arg value="14"/>-->
     </bean>
 
     <bean id="laptop" class="org.example.Laptop">

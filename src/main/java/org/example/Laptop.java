@@ -2,7 +2,7 @@ package org.example;
 
 public class Laptop {
     public Laptop() {
-        System.out.println("Laptop Constructor");
+        System.out.println("Laptop Default Constructor");
     }
 
     public void compile() {
