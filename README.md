@@ -1,1 +1,1 @@
-# java-no-spring-boot-demo
+# java-just-spring-no-boot
