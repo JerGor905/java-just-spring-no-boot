@@ -4,12 +4,12 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="dev" class="org.example.Dev">
+    <bean id="dev" class="org.example.Dev" autowire="byType">
 <!--        # laptop-->
 <!--        Setter Injection:-->
 <!--        <property name="laptop" ref="laptop"/>-->
 <!--        Constructor Injection:-->
-        <constructor-arg ref="laptop"/>
+<!--        <constructor-arg ref="laptop"/>-->
 
 <!--        # age-->
 <!--        Setter Injection:-->
@@ -18,7 +18,10 @@
 <!--        <constructor-arg value="14"/>-->
     </bean>
 
-    <bean id="laptop" class="org.example.Laptop">
+    <bean id="laptop" class="org.example.Laptop" primary="true">
+    </bean>
+
+    <bean id="desktop" class="org.example.Desktop">
     </bean>
 
 </beans>
